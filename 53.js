@@ -9,18 +9,18 @@
 
 // If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
-// /**
-//  * @param {number[]} nums
-//  * @return {number}
-//  */
-// var maxSubArray = function(nums) {
-//   var sum = 0;
-//   var max = nums[0];
-//   for (var i = 0; i < nums.length; i++) {
-//       sum += nums[i];
-//       if (sum > max) max = sum;
-//       if (sum < 0) sum = 0;
-//   }
-//   return max;
-// };
-// maxSubArray([1,2,-1,-2,2,1,-2,1,4,-5,4]);
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var maxSubArray = function(nums) {
+  var sum = 0;
+  var max = nums[0];
+  for (var i = 0; i < nums.length; i++) {
+      sum += nums[i];
+      if (sum > max) max = sum;
+      if (sum < 0) sum = 0;
+  }
+  return max;
+};
+maxSubArray([1,2,-1,-2,2,1,-2,1,4,-5,4]);
